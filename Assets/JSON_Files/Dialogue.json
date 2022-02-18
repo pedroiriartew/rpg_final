@@ -1,0 +1,11 @@
+{
+    "_dialogueSystem": {
+        "_dialogue": [{
+		"_lines": ["Me alegra saber que alguien está dispuesto a ayudar.", "Necesito que mates a todos esos goblinoids!", "Ahora... En lo posible"]
+            }, {
+                "_lines": ["Y bueno?! Qué estás esperando?"]
+            }
+        ],
+        "dialogueIndex": 0
+    }
+}

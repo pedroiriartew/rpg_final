@@ -1,0 +1,494 @@
+{
+	"_passiveAbilities": [{
+		"_ID": 0,
+		"_abilityName": "Piel de Bronce",
+		"_abilityType": 0,
+		"_comprado": false,
+		"_pointsToBuy": 1,
+		"_isAbilityActive": false,
+		"_abilityNodes": [{
+			"_ID": 1,
+			"_abilityName": "Piel de Hierro",
+			"_abilityType": 0,
+			"_comprado": false,
+			"_pointsToBuy": 2,
+			"_isAbilityActive": false,
+			"_abilityNodes": [{
+				"_ID": 2,
+				"_abilityName": "Piel de Diamante",
+				"_abilityType": 0,
+				"_comprado": false,
+				"_pointsToBuy": 3,
+				"_isAbilityActive": false,
+				"_abilityNodes": [],
+				"_passiveStats": {
+					"_dmg": 0.0,
+					"_life": 0.0,
+					"_lifeCap": 45.0,
+					"_speed": 0.0,
+					"_range": 0.0,
+					"_actualExperience": 0.0,
+					"_experienceCap": 0.0
+				}
+			}, {
+				"_ID": 9,
+				"_abilityName": "Asalto Aéreo",
+				"_abilityType": 1,
+				"_comprado": false,
+				"_pointsToBuy": 3,
+				"_isAbilityActive": false,
+				"_abilityNodes": [],
+				"_abilityCooldown": 30.0
+			}],
+			"_passiveStats": {
+				"_dmg": 0.0,
+				"_life": 0.0,
+				"_lifeCap": 30.0,
+				"_speed": 0.0,
+				"_range": 0.0,
+				"_actualExperience": 0.0,
+				"_experienceCap": 0.0
+			}
+		}, {
+			"_ID": 3,
+			"_abilityName": "Paso Veloz",
+			"_abilityType": 0,
+			"_comprado": false,
+			"_pointsToBuy": 2,
+			"_isAbilityActive": false,
+			"_abilityNodes": [{
+				"_ID": 5,
+				"_abilityName": "Cazador",
+				"_abilityType": 0,
+				"_comprado": false,
+				"_pointsToBuy": 4,
+				"_isAbilityActive": false,
+				"_abilityNodes": [{
+					"_ID": 8,
+					"_abilityName": "Invisibil_IDad",
+					"_abilityType": 1,
+					"_comprado": false,
+					"_pointsToBuy": 5,
+					"_isAbilityActive": false,
+					"_abilityNodes": [],
+					"_abilityCooldown": 100.0
+				}],
+				"_passiveStats": {
+					"_dmg": 0.0,
+					"_life": 0.0,
+					"_lifeCap": 0.0,
+					"_speed": 30.0,
+					"_range": 20.0,
+					"_actualExperience": 0.0,
+					"_experienceCap": 0.0
+				}
+			}, {
+				"_ID": 4,
+				"_abilityName": "Ojo de Halcón",
+				"_abilityType": 0,
+				"_comprado": false,
+				"_pointsToBuy": 3,
+				"_isAbilityActive": false,
+				"_abilityNodes": [{
+					"_ID": 6,
+					"_abilityName": "Tirador Experto",
+					"_abilityType": 0,
+					"_comprado": false,
+					"_pointsToBuy": 4,
+					"_isAbilityActive": false,
+					"_abilityNodes": [],
+					"_passiveStats": {
+						"_dmg": 0.0,
+						"_life": 0.0,
+						"_lifeCap": 0.0,
+						"_speed": 0.0,
+						"_range": 35.0,
+						"_actualExperience": 0.0,
+						"_experienceCap": 0.0
+					}
+				}],
+				"_passiveStats": {
+					"_dmg": 0.0,
+					"_life": 0.0,
+					"_lifeCap": 0.0,
+					"_speed": 0.0,
+					"_range": 20.0,
+					"_actualExperience": 0.0,
+					"_experienceCap": 0.0
+				}
+			}, {
+				"_ID": 4,
+				"_abilityName": "Ojo de Halcón",
+				"_abilityType": 0,
+				"_comprado": false,
+				"_pointsToBuy": 3,
+				"_isAbilityActive": false,
+				"_abilityNodes": [{
+					"_ID": 6,
+					"_abilityName": "Tirador Experto",
+					"_abilityType": 0,
+					"_comprado": false,
+					"_pointsToBuy": 4,
+					"_isAbilityActive": false,
+					"_abilityNodes": [],
+					"_passiveStats": {
+						"_dmg": 0.0,
+						"_life": 0.0,
+						"_lifeCap": 0.0,
+						"_speed": 0.0,
+						"_range": 35.0,
+						"_actualExperience": 0.0,
+						"_experienceCap": 0.0
+					}
+				}],
+				"_passiveStats": {
+					"_dmg": 0.0,
+					"_life": 0.0,
+					"_lifeCap": 0.0,
+					"_speed": 0.0,
+					"_range": 20.0,
+					"_actualExperience": 0.0,
+					"_experienceCap": 0.0
+				}
+			}],
+			"_passiveStats": {
+				"_dmg": 0.0,
+				"_life": 0.0,
+				"_lifeCap": 0.0,
+				"_speed": 20.0,
+				"_range": 0.0,
+				"_actualExperience": 0.0,
+				"_experienceCap": 0.0
+			}
+		}],
+		"_passiveStats": {
+			"_dmg": 0.0,
+			"_life": 0.0,
+			"_lifeCap": 20.0,
+			"_speed": 0.0,
+			"_range": 0.0,
+			"_actualExperience": 0.0,
+			"_experienceCap": 0.0
+		}
+	}, {
+
+		"_ID": 1,
+		"_abilityName": "Piel de Hierro",
+		"_abilityType": 0,
+		"_comprado": false,
+		"_pointsToBuy": 2,
+		"_isAbilityActive": false,
+		"_abilityNodes": [{
+			"_ID": 2,
+			"_abilityName": "Piel de Diamante",
+			"_abilityType": 0,
+			"_comprado": false,
+			"_pointsToBuy": 3,
+			"_isAbilityActive": false,
+			"_abilityNodes": [],
+			"_passiveStats": {
+				"_dmg": 0.0,
+				"_life": 0.0,
+				"_lifeCap": 45.0,
+				"_speed": 0.0,
+				"_range": 0.0,
+				"_actualExperience": 0.0,
+				"_experienceCap": 0.0
+			}
+		}, {
+			"_ID": 9,
+			"_abilityName": "Asalto Aéreo",
+			"_abilityType": 1,
+			"_comprado": false,
+			"_pointsToBuy": 3,
+			"_isAbilityActive": false,
+			"_abilityNodes": [],
+			"_abilityCooldown": 30.0
+		}],
+		"_passiveStats": {
+			"_dmg": 0.0,
+			"_life": 0.0,
+			"_lifeCap": 30.0,
+			"_speed": 0.0,
+			"_range": 0.0,
+			"_actualExperience": 0.0,
+			"_experienceCap": 0.0
+		}
+	}, {
+		"_ID": 2,
+		"_abilityName": "Piel de Diamante",
+		"_abilityType": 0,
+		"_comprado": false,
+		"_pointsToBuy": 3,
+		"_isAbilityActive": false,
+		"_abilityNodes": [],
+		"_passiveStats": {
+			"_dmg": 0.0,
+			"_life": 0.0,
+			"_lifeCap": 45.0,
+			"_speed": 0.0,
+			"_range": 0.0,
+			"_actualExperience": 0.0,
+			"_experienceCap": 0.0
+		}
+	}, {
+		"_ID": 3,
+		"_abilityName": "Paso Veloz",
+		"_abilityType": 0,
+		"_comprado": false,
+		"_pointsToBuy": 2,
+		"_isAbilityActive": false,
+		"_abilityNodes": [{
+			"_ID": 5,
+			"_abilityName": "Cazador",
+			"_abilityType": 0,
+			"_comprado": false,
+			"_pointsToBuy": 4,
+			"_isAbilityActive": false,
+			"_abilityNodes": [{
+				"_ID": 8,
+				"_abilityName": "Invisibil_IDad",
+				"_abilityType": 1,
+				"_comprado": false,
+				"_pointsToBuy": 5,
+				"_isAbilityActive": false,
+				"_abilityNodes": [],
+				"_abilityCooldown": 100.0
+			}],
+			"_passiveStats": {
+				"_dmg": 0.0,
+				"_life": 0.0,
+				"_lifeCap": 0.0,
+				"_speed": 30.0,
+				"_range": 20.0,
+				"_actualExperience": 0.0,
+				"_experienceCap": 0.0
+			}
+		}, {
+			"_ID": 4,
+			"_abilityName": "Ojo de Halcón",
+			"_abilityType": 0,
+			"_comprado": false,
+			"_pointsToBuy": 3,
+			"_isAbilityActive": false,
+			"_abilityNodes": [{
+				"_ID": 6,
+				"_abilityName": "Tirador Experto",
+				"_abilityType": 0,
+				"_comprado": false,
+				"_pointsToBuy": 4,
+				"_isAbilityActive": false,
+				"_abilityNodes": [],
+				"_passiveStats": {
+					"_dmg": 0.0,
+					"_life": 0.0,
+					"_lifeCap": 0.0,
+					"_speed": 0.0,
+					"_range": 35.0,
+					"_actualExperience": 0.0,
+					"_experienceCap": 0.0
+				}
+			}],
+			"_passiveStats": {
+				"_dmg": 0.0,
+				"_life": 0.0,
+				"_lifeCap": 0.0,
+				"_speed": 0.0,
+				"_range": 20.0,
+				"_actualExperience": 0.0,
+				"_experienceCap": 0.0
+			}
+		}],
+		"_passiveStats": {
+			"_dmg": 0.0,
+			"_life": 0.0,
+			"_lifeCap": 0.0,
+			"_speed": 20.0,
+			"_range": 0.0,
+			"_actualExperience": 0.0,
+			"_experienceCap": 0.0
+		}
+	}, {
+		"_ID": 4,
+		"_abilityName": "Ojo de Halcón",
+		"_abilityType": 0,
+		"_comprado": false,
+		"_pointsToBuy": 3,
+		"_isAbilityActive": false,
+		"_abilityNodes": [{
+			"_ID": 6,
+			"_abilityName": "Tirador Experto",
+			"_abilityType": 0,
+			"_comprado": false,
+			"_pointsToBuy": 4,
+			"_isAbilityActive": false,
+			"_abilityNodes": [],
+			"_passiveStats": {
+				"_dmg": 0.0,
+				"_life": 0.0,
+				"_lifeCap": 0.0,
+				"_speed": 0.0,
+				"_range": 35.0,
+				"_actualExperience": 0.0,
+				"_experienceCap": 0.0
+			}
+		}],
+		"_passiveStats": {
+			"_dmg": 0.0,
+			"_life": 0.0,
+			"_lifeCap": 0.0,
+			"_speed": 0.0,
+			"_range": 20.0,
+			"_actualExperience": 0.0,
+			"_experienceCap": 0.0
+		}
+	}, {
+		"_ID": 5,
+		"_abilityName": "Cazador",
+		"_abilityType": 0,
+		"_comprado": false,
+		"_pointsToBuy": 4,
+		"_isAbilityActive": false,
+		"_abilityNodes": [{
+			"_ID": 8,
+			"_abilityName": "Invisibil_IDad",
+			"_abilityType": 1,
+			"_comprado": false,
+			"_pointsToBuy": 5,
+			"_isAbilityActive": false,
+			"_abilityNodes": [],
+			"_abilityCooldown": 100.0
+		}],
+		"_passiveStats": {
+			"_dmg": 0.0,
+			"_life": 0.0,
+			"_lifeCap": 0.0,
+			"_speed": 30.0,
+			"_range": 20.0,
+			"_actualExperience": 0.0,
+			"_experienceCap": 0.0
+		}
+	}, {
+		"_ID": 6,
+		"_abilityName": "Tirador Experto",
+		"_abilityType": 0,
+		"_comprado": false,
+		"_pointsToBuy": 4,
+		"_isAbilityActive": false,
+		"_abilityNodes": [],
+		"_passiveStats": {
+			"_dmg": 0.0,
+			"_life": 0.0,
+			"_lifeCap": 0.0,
+			"_speed": 0.0,
+			"_range": 35.0,
+			"_actualExperience": 0.0,
+			"_experienceCap": 0.0
+		}
+	}],
+	"_activeAbilities": [{
+		"_ID": 7,
+		"_abilityName": "Teleport",
+		"_abilityType": 1,
+		"_comprado": false,
+		"_pointsToBuy": 1,
+		"_isAbilityActive": false,
+		"_abilityNodes": [{
+			"_ID": 3,
+			"_abilityName": "Paso Veloz",
+			"_abilityType": 0,
+			"_comprado": false,
+			"_pointsToBuy": 2,
+			"_isAbilityActive": false,
+			"_abilityNodes": [{
+				"_ID": 5,
+				"_abilityName": "Cazador",
+				"_abilityType": 0,
+				"_comprado": false,
+				"_pointsToBuy": 4,
+				"_isAbilityActive": false,
+				"_abilityNodes": [{
+					"_ID": 8,
+					"_abilityName": "Invisibil_IDad",
+					"_abilityType": 1,
+					"_comprado": false,
+					"_pointsToBuy": 5,
+					"_isAbilityActive": false,
+					"_abilityNodes": [],
+					"_abilityCooldown": 100.0
+				}],
+				"_passiveStats": {
+					"_dmg": 0.0,
+					"_life": 0.0,
+					"_lifeCap": 0.0,
+					"_speed": 30.0,
+					"_range": 20.0,
+					"_actualExperience": 0.0,
+					"_experienceCap": 0.0
+				}
+			}, {
+				"_ID": 4,
+				"_abilityName": "Ojo de Halcón",
+				"_abilityType": 0,
+				"_comprado": false,
+				"_pointsToBuy": 3,
+				"_isAbilityActive": false,
+				"_abilityNodes": [{
+					"_ID": 6,
+					"_abilityName": "Tirador Experto",
+					"_abilityType": 0,
+					"_comprado": false,
+					"_pointsToBuy": 4,
+					"_isAbilityActive": false,
+					"_abilityNodes": [],
+					"_passiveStats": {
+						"_dmg": 0.0,
+						"_life": 0.0,
+						"_lifeCap": 0.0,
+						"_speed": 0.0,
+						"_range": 35.0,
+						"_actualExperience": 0.0,
+						"_experienceCap": 0.0
+					}
+				}],
+				"_passiveStats": {
+					"_dmg": 0.0,
+					"_life": 0.0,
+					"_lifeCap": 0.0,
+					"_speed": 0.0,
+					"_range": 20.0,
+					"_actualExperience": 0.0,
+					"_experienceCap": 0.0
+				}
+			}],
+			"_passiveStats": {
+				"_dmg": 0.0,
+				"_life": 0.0,
+				"_lifeCap": 0.0,
+				"_speed": 20.0,
+				"_range": 0.0,
+				"_actualExperience": 0.0,
+				"_experienceCap": 0.0
+			}
+		}],
+		"_abilityCooldown": 60.0
+	}, {
+		"_ID": 9,
+		"_abilityName": "Asalto Aéreo",
+		"_abilityType": 1,
+		"_comprado": false,
+		"_pointsToBuy": 3,
+		"_isAbilityActive": false,
+		"_abilityNodes": [],
+		"_abilityCooldown": 30.0
+	}, {
+		"_ID": 8,
+		"_abilityName": "Invisibil_IDad",
+		"_abilityType": 1,
+		"_comprado": false,
+		"_pointsToBuy": 5,
+		"_isAbilityActive": false,
+		"_abilityNodes": [],
+		"_abilityCooldown": 100.0
+	}]
+}
