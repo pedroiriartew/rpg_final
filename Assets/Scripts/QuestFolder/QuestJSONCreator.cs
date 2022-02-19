@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class QuestJSONCreator : MonoBehaviour
 {
-    private AbilityData _abilityList;
+    private QuestData _questList;
 
     private void Awake()
     {
-        _abilityList = new AbilityData();
-        string json = JsonUtility.ToJson(_abilityList);
-        System.IO.File.WriteAllText(Application.dataPath + "/RogueAbilityList.json", json);
+        _questList = new QuestData();
+        string json = JsonUtility.ToJson(_questList);
+        System.IO.File.WriteAllText(Application.dataPath + "/QuestData.json", json);
     }
 }// Esto de arriba está hecho para la primera vez que estaba creando el JSON
 

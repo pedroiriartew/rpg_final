@@ -13,9 +13,9 @@ public class QuestSlot : MonoBehaviour
         _questText = GetComponentInChildren<Text>();
     }
 
-    public void SetQuest(Quest _quest)
+    public void SetQuest(Quest p_quest)
     {
-        this._quest = _quest;
+        _quest = p_quest;
     }
 
     public Quest GetQuest()

@@ -84,5 +84,9 @@ public class Quest
 [System.Serializable]
 public class QuestData
 {
-    public List<Quest> questList;
+    [SerializeField] private List<Quest> _questList;
+
+    public List<Quest> QuestList { get { return _questList; } }
+
+    public QuestData() { _questList = new List<Quest>();}
 }

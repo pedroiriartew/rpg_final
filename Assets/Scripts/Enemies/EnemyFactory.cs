@@ -7,7 +7,7 @@ public class EnemyFactory : MonoBehaviour
     [SerializeField] private GameObject[] _enemyArray;
 
     #region Singleton
-    public static EnemyFactory _instance = null;
+    private static EnemyFactory _instance = null;
     private void Awake()
     {
         if (_instance == null)
@@ -20,19 +20,19 @@ public class EnemyFactory : MonoBehaviour
         }
     }
 
-    public EnemyFactory GetInstance()
+    public static EnemyFactory GetInstance()
     {
         return _instance;
     }
 
 #endregion
 
-    public GameObject RequestEnemy(int enemy)
+    public GameObject RequestEnemy(int p_enemy)
     {
 
         GameObject goMesh;
 
-        switch (enemy)
+        switch (p_enemy)
         {
             case 1:
                 goMesh = Instantiate(_enemyArray[0], Vector3.zero, Quaternion.identity);
@@ -46,6 +46,36 @@ public class EnemyFactory : MonoBehaviour
                 break;
             case 3:
                 goMesh = Instantiate(_enemyArray[2], Vector3.zero, Quaternion.identity);
+                goMesh.AddComponent<TankEnemyActor>();
+                goMesh.GetComponent<TankEnemyActor>().SetCharacter(new TankEnemy());
+                break;
+            default:
+                goMesh = null;
+                break;
+        }
+
+        return goMesh;
+    }
+
+    public GameObject RequestEnemy(int p_enemy, Vector3 p_position)
+    {
+
+        GameObject goMesh;
+
+        switch (p_enemy)
+        {
+            case 1:
+                goMesh = Instantiate(_enemyArray[0], p_position, Quaternion.identity);
+                goMesh.AddComponent<NormalEnemyActor>();
+                goMesh.GetComponent<NormalEnemyActor>().SetCharacter(new NormalEnemy());
+                break;
+            case 2:
+                goMesh = Instantiate(_enemyArray[1], p_position, Quaternion.identity);
+                goMesh.AddComponent<FastEnemyActor>();
+                goMesh.GetComponent<FastEnemyActor>().SetCharacter(new FastEnemy());
+                break;
+            case 3:
+                goMesh = Instantiate(_enemyArray[2], p_position, Quaternion.identity);
                 goMesh.AddComponent<TankEnemyActor>();
                 goMesh.GetComponent<TankEnemyActor>().SetCharacter(new TankEnemy());
                 break;
