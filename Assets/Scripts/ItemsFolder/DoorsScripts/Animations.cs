@@ -15,7 +15,6 @@ public class Animations : MonoBehaviour
     {
         if (_animator != null)
         {
-            Debug.Log("Entered");
             _animator.SetBool("isOpen", !_animator.GetBool("isOpen"));
         }
     }

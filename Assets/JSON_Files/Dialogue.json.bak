@@ -1,9 +1,10 @@
 {
     "_dialogueSystem": {
         "_dialogue": [{
-                "_lines": ["Me alegra saber que alguien está dispuesto a ayudar.", "Necesito que mates a todos esos goblinoids!", "Ahora, en lo posible"]
-            }, {
-                "_lines": ["Y bueno?! Qué estás esperando?"]
+		"_lines": ["Buen día!", "Abre el cofre al lado mío para obtener un item", "Esta es tu primera misión, es lo básico", "Al tocar el cofre recibiras otra nueva misión"]
+            },
+			{
+                "_lines": ["Habla con Ryan detrás mío cuando termines"]
             }
         ],
         "dialogueIndex": 0

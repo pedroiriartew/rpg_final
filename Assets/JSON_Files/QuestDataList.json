@@ -1,20 +1,14 @@
 {
     "_questList": [{
             "_questID": 0,
-            "_questName": "Recover the Skull",
+            "_questName": "Learn the basics",
             "_questStages": [{
                     "_stageID": 0,
                     "_stageName": "First Stage",
                     "_isStageFinished": false,
                     "_stageObjectives": [{
                             "_objectiveID": 0,
-                            "_objectiveName": "Explore the area in search of the Skull",
-                            "_type": 0,
-                            "_isObjectiveFinished": false
-                        }, 
-						{
-                            "_objectiveID": 1,
-                            "_objectiveName": "Recover the Skull to the NPC",
+                            "_objectiveName": "Open the chest and take an item from there",
                             "_type": 1,
                             "_isObjectiveFinished": false
                         }
@@ -27,15 +21,27 @@
         }, 
 		{
             "_questID": 1,
-            "_questName": "Interact with the World",
+            "_questName": "Recover two Lost Skulls inside the top slopes",
             "_questStages": [{
                     "_stageID": 0,
                     "_stageName": "First Stage",
                     "_isStageFinished": false,
                     "_stageObjectives": [{
                             "_objectiveID": 0,
-                            "_objectiveName": "Spawn an item",
+                            "_objectiveName": "Recover the First Skull",
                             "_type": 1,
+                            "_isObjectiveFinished": false
+                        },
+						{
+                            "_objectiveID": 1,
+                            "_objectiveName": "Recover the Second Skull",
+                            "_type": 1,
+                            "_isObjectiveFinished": false
+                        },
+						{
+                            "_objectiveID": 2,
+                            "_objectiveName": "Talk to the Ryan",
+                            "_type": 3,
                             "_isObjectiveFinished": false
                         }
                     ]
@@ -47,14 +53,20 @@
         },
 		{
             "_questID": 2,
-            "_questName": "Interact with the World",
+            "_questName": "Recover the Lost Treasure",
             "_questStages": [{
                     "_stageID": 0,
                     "_stageName": "First Stage",
                     "_isStageFinished": false,
                     "_stageObjectives": [{
                             "_objectiveID": 0,
-                            "_objectiveName": "Spawn an item",
+                            "_objectiveName": "Open the Door",
+                            "_type": 1,
+                            "_isObjectiveFinished": false
+                        },
+						{
+                            "_objectiveID": 1,
+                            "_objectiveName": "Recover the treasure",
                             "_type": 1,
                             "_isObjectiveFinished": false
                         }
@@ -63,7 +75,7 @@
             ],
             "_isQuestFinished": false,
             "_isQuestActive": false,
-            "_type": 1
+            "_type": 0
         }
     ]
 }

@@ -8,8 +8,8 @@ public class QuestHUD : MonoBehaviour
     [SerializeField] private List<QuestSlot> _questSlots = null;
     [SerializeField] private GameObject _questUI = null;
     [SerializeField] private QuestSlot _slotPrefab = null;
-    [SerializeField] private Transform _questLayout = null;
-
+    [SerializeField] private GridLayout _questLayout = null;
+    #region Singleton
     private void Awake()
     {
         if (_instance == null)
@@ -26,6 +26,7 @@ public class QuestHUD : MonoBehaviour
     {
         return _instance;
     }
+#endregion
 
     private void Start()
     {
@@ -70,7 +71,7 @@ public class QuestHUD : MonoBehaviour
 
                 if (QuestManagerSystem.GetInstance().GetAvailableQuests()[i].IsQuestActive() && !QuestManagerSystem.GetInstance().GetAvailableQuests()[i].IsFinished())
                 {
-                    _questSlots.Add(Instantiate(_slotPrefab, _questLayout));
+                    _questSlots.Add(Instantiate(_slotPrefab, _questLayout.transform));
                     _questSlots[i].SetQuest(QuestManagerSystem.GetInstance().GetAvailableQuests()[i]);
                     _questSlots[i].InitializeSlot();
                 }

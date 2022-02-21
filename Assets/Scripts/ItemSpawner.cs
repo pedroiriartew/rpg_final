@@ -9,15 +9,15 @@ public class ItemSpawner : MonoBehaviour
 
     public void Something()
     {
-        if (QuestManagerSystem.GetInstance().IsQuestActive(_npc.GetIDs()[0]))
-        {
-            int[] listOfQuestIDs = _npc.GetIDs();
-            QuestManagerSystem.GetInstance().MarkObjective(listOfQuestIDs[0], listOfQuestIDs[1], listOfQuestIDs[2]);
+        //if (QuestManagerSystem.GetInstance().IsQuestActive(_npc.GetIDs()[0]))
+        //{
+        //    int[] listOfQuestIDs = _npc.GetIDs();
+        //    QuestManagerSystem.GetInstance().MarkObjective(listOfQuestIDs[0], listOfQuestIDs[1], listOfQuestIDs[2]);
 
-            _npc.SetIDs(listOfQuestIDs[0], listOfQuestIDs[1], 1);
-        }
+        //    _npc.SetIDs(listOfQuestIDs[0], listOfQuestIDs[1], 1);
+        //}
 
 
-        ItemGenerator.GetInstance().CreateItem();
+        //ItemGenerator.GetInstance().CreateItem();
     }
 }

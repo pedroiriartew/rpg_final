@@ -1,0 +1,12 @@
+{
+    "_dialogueSystem": {
+        "_dialogue": [{
+		"_lines": ["Qué tal? Mi nombre es Ryan", "Perdí un tesoro en alguna parte de las ruinas a tu derecha", "El tesoro está detrás de una gran puerta, pero es muy peligroso para mí", "Recupera mi tesoro por favor y te dejaré tener una parte"]
+            },
+			{
+                "_lines": ["Si mal no recuerdo, hay un botón que abre la puerta, pero no sé donde está exactamente"]
+            }
+        ],
+        "dialogueIndex": 0
+    }
+}

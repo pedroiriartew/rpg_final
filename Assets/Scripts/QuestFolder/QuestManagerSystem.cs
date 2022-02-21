@@ -28,7 +28,7 @@ public class QuestManagerSystem
 
     public void AddQuest(int p_IDquestToAdd)
     {
-        string json = System.IO.File.ReadAllText(Application.dataPath + "/QuestDataList.json");
+        string json = System.IO.File.ReadAllText(Application.dataPath + "/JSON_Files/QuestDataList.json");
         QuestData questListData = JsonUtility.FromJson<QuestData>(json);
 
         foreach (Quest item in questListData.QuestList)

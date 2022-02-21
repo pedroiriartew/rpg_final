@@ -12,29 +12,29 @@ public class NPCDummy : MonoBehaviour
     public void Interact()
     {
 
-        if (!QuestManagerSystem.GetInstance().IsQuestActive(0) && !hasSkull)
-        {
-            QuestManagerSystem.GetInstance().AddQuest(0);
-            GetComponentInChildren<Text>().text = _dialogueSystem.ActionDialogue(QuestManagerSystem.GetInstance().ReturnCurrentObjectiveID(0));
-            // Debug.Log(dialogueSystem.ActionDialogue(QuestManagerSystem.GetInstance().ReturnCurrentObjectiveID(0)));
-            QuestManagerSystem.GetInstance().MarkObjective(0, 0, 0);
+        //if (!QuestManagerSystem.GetInstance().IsQuestActive(0) && !hasSkull)
+        //{
+        //    QuestManagerSystem.GetInstance().AddQuest(0);
+        //    GetComponentInChildren<Text>().text = _dialogueSystem.ActionDialogue(QuestManagerSystem.GetInstance().ReturnCurrentObjectiveID(0));
+        //    // Debug.Log(dialogueSystem.ActionDialogue(QuestManagerSystem.GetInstance().ReturnCurrentObjectiveID(0)));
+        //    QuestManagerSystem.GetInstance().MarkObjective(0, 0, 0);
 
-        }
+        //}
 
-        if (QuestManagerSystem.GetInstance().IsQuestActive(0) && hasSkull)
-        {
-            QuestManagerSystem.GetInstance().MarkObjective(0, 0, 1);
-            GetComponentInChildren<Text>().text = _dialogueSystem.ActionDialogue(1);
-            // Debug.Log(dialogueSystem.ActionDialogue(1));
-        }
+        //if (QuestManagerSystem.GetInstance().IsQuestActive(0) && hasSkull)
+        //{
+        //    QuestManagerSystem.GetInstance().MarkObjective(0, 0, 1);
+        //    GetComponentInChildren<Text>().text = _dialogueSystem.ActionDialogue(1);
+        //    // Debug.Log(dialogueSystem.ActionDialogue(1));
+        //}
 
-        if (!QuestManagerSystem.GetInstance().IsQuestActive(0) && hasSkull)
-        {
-            QuestManagerSystem.GetInstance().AddQuest(0);
-            QuestManagerSystem.GetInstance().MarkObjective(0, 0, 0);
-            QuestManagerSystem.GetInstance().MarkObjective(0, 0, 1);
-            GetComponentInChildren<Text>().text = _dialogueSystem.ActionDialogue(1);
-        }
+        //if (!QuestManagerSystem.GetInstance().IsQuestActive(0) && hasSkull)
+        //{
+        //    QuestManagerSystem.GetInstance().AddQuest(0);
+        //    QuestManagerSystem.GetInstance().MarkObjective(0, 0, 0);
+        //    QuestManagerSystem.GetInstance().MarkObjective(0, 0, 1);
+        //    GetComponentInChildren<Text>().text = _dialogueSystem.ActionDialogue(1);
+        //}
     }
 
     public void SetHasSkull(bool _hasSkull)
