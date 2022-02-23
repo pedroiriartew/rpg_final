@@ -129,6 +129,7 @@ public class AbilityHUD : MonoBehaviour
     {
         ActiveAbility[] activeAbilities = PlayerSingleton.GetInstance().GetPlayer().GetCharacter().GetActiveAbilities();
         //Hago dos for porque tengo dos arrays distintos
+
         for (int i = 0; i < _activeAbilitiesHUD.Length; i++)
         {
             if (activeAbilities[i] != null)

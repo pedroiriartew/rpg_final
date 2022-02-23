@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TankEnemyActor : MonoBehaviour
+public class TankEnemyActor : EnemyActor
 {
-    private TankEnemy _character;
+    private void Awake()
+    {
+        _character = new TankEnemy();
+    }
 
     public void SetCharacter(TankEnemy p_character)
     {

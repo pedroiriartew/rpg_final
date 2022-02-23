@@ -9,12 +9,10 @@ public class IventoryHUD : MonoBehaviour
     private SlotScript[] _bagSlots;
     private InventorySystem _playerInventory = null;
     [SerializeField] private GameObject _inventoryUI;
-    private CameraControl _camera;
 
     private void Awake()
     {
         _player.OpenCloseInventory += OpenCloseInventory;
-        _camera = FindObjectOfType<CameraControl>();
     }
     void Start()
     {
@@ -43,13 +41,5 @@ public class IventoryHUD : MonoBehaviour
     {
         _inventoryUI.SetActive(!_inventoryUI.activeSelf);//Forma fancy de decirle ponete en el estado opuesto al que estás
 
-        if (_inventoryUI.activeSelf)
-        {
-            _camera.enabled = false;
-        }
-        else
-        {
-            _camera.enabled = true;
-        }
     }
 }

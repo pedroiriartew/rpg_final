@@ -17,10 +17,8 @@ public class TankEnemy : EnemyCharacter
 
         _myStats.LIFE = 100;
         _myStats.DMG = 75;
-        _myStats.SPEED = 2f;
+        _myStats.SPEED = 1f;
         _myStats.RANGE = 25f;
-
-        //Los comento porque después me fijo con más atención que poner en cada uno
 
         _enemyCount++;
     }
@@ -34,7 +32,7 @@ public class FastEnemy : EnemyCharacter
 
         _myStats.LIFE = 100;
         _myStats.DMG = 75;
-        _myStats.SPEED = 2f;
+        _myStats.SPEED = 3f;
         _myStats.RANGE = 25f;
 
         //Los comento porque después me fijo con más atención que poner en cada uno

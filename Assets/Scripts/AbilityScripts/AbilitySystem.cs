@@ -10,12 +10,12 @@ public class AbilitySystem
     [SerializeField] private AbilityData _classAbilities = null;
     [SerializeField] private string _className;
 
-    public AbilitySystem(string _className)
+    public AbilitySystem(string p_className)
     {
         _abilitiesToBuy = new List<AbilityNode>();
         _availableAbilities = new List<AbilityNode>();
 
-        this._className = _className;
+        _className = p_className;
 
         LoadClassAbilitiesFromJson();
 
@@ -54,6 +54,7 @@ public class AbilitySystem
             if (passiveAbility.GetPointsToBuy() == 1)
             {
                 AddAbilityToBuy(passiveAbility);
+                //AddAbilityToAvailable(passiveAbility);
             }
         }
 
@@ -62,6 +63,7 @@ public class AbilitySystem
             if (activeAbility.GetPointsToBuy() == 1)
             {
                 AddAbilityToBuy(activeAbility);
+                //AddAbilityToAvailable(activeAbility);
             }
         }
     }

@@ -8,12 +8,6 @@ using System.IO;
 public class PlayerActor : MonoBehaviour
 {
     [SerializeField] private PlayableCharacter _character = null;
-    //[SerializeField] private float _jumpForce = 0.1f;
-    private CharacterController _cc;
-    private Animator _animator;
-
-    private float _horizontalMovement = 0f;
-    private float _verticalMovement = 0f;
 
     public event Action OpenCloseInventory;
     public event Action OpenCloseAbilities;
@@ -30,13 +24,12 @@ public class PlayerActor : MonoBehaviour
     private float _gravity = 9.8f;
     private float _verticalSpeed = 0f;
 
+    private Animator _animator;
+
     private void Awake()
     {
         PlayerSingleton.GetInstance().SetPlayer(this);
-
-        _animator = GetComponentInChildren<Animator>();
-
-        _cc = GetComponent<CharacterController>();
+        _animator = GetComponent<Animator>();
 
         SetCharacter();
     }
@@ -48,20 +41,6 @@ public class PlayerActor : MonoBehaviour
 
     public void GetInput()
     {
-        _horizontalMovement = Input.GetAxis("Horizontal");
-        _verticalMovement = Input.GetAxis("Vertical");
-
-        AnimatorInputs();
-
-        if (Input.GetMouseButtonDown(0) )//Left click para atacar
-        {
-            _animator.SetTrigger("Attack");
-        }
-
-        if (Input.GetKeyDown(KeyCode.E))//Righ click para interactuar con las cosas
-        {
-            Interact();
-        }
 
         //Abro el inventario
         if (Input.GetKeyDown(KeyCode.I))
@@ -83,57 +62,13 @@ public class PlayerActor : MonoBehaviour
 
     }
 
-    private void AnimatorInputs()
-    {
-        if (_horizontalMovement != 0 || _verticalMovement != 0)
-        {
-            _animator.SetFloat("Speed", 1);
-        }
-        else
-        {
-            _animator.SetFloat("Speed", 0);
-        }
-    }
-
-    public void MovePlayer()
-    {
-        if (_cc.isGrounded)
-        {
-            _verticalSpeed = 0;
-        }
-        else
-        {
-            _verticalSpeed -=_gravity * Time.deltaTime; 
-        }
-
-        Vector3 move = transform.forward * _verticalMovement + transform.right * _horizontalMovement;
-        Vector3 gravityMove = new Vector3(0, _verticalSpeed, 0);
-
-
-        _cc.Move(move * Time.deltaTime * _character.GetSpeed() + gravityMove * Time.deltaTime);
-    }
-
     internal void SetTemporaryItemVariables(bool _setTemporaryActive, BaseCharacter.Stats _temporaryItemStats)
     {
         _isTemporaryItemActive = _setTemporaryActive;
         this._temporaryItemStats = _temporaryItemStats;
     }
 
-    /// <summary>
-    /// Hace falta reescribir el interactuar
-    /// </summary>
-    public void Interact()
-    {
-        //if (Physics.Raycast(ray, out hit, 100))//Un cierto rango para interactuar con las cosas
-        //{
-        //    Interactable interactable = hit.collider.GetComponent<Interactable>();//es interactuable lo que acabo de clickear?
 
-        //    if (interactable != null)
-        //    {
-        //        interactable.Interact();
-        //    }
-        //}
-    }
     /// <summary>
     /// Set character lee la data del Json y luego setea los stats y el inventario en este character
     /// </summary>
@@ -205,7 +140,6 @@ public class PlayerActor : MonoBehaviour
         }
 
         GetInput();
-        MovePlayer();
     }
 
 }

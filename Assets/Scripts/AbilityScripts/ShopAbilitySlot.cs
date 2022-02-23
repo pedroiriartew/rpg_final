@@ -8,7 +8,7 @@ public class ShopAbilitySlot : MonoBehaviour
     protected Image abImage = null;
     protected Text _abText = null;
 
-    protected int id = 0;
+    [SerializeField] protected int id = 0;
 
     private void Awake()
     {

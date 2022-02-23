@@ -10,7 +10,7 @@ public class LevelHUD : MonoBehaviour
 
     // Start is called before the first frame update
 
-    private void Awake()
+    private void Start()
     {
         PlayerSingleton.GetInstance().GetPlayer().levelUp += UpdateUI;
     }

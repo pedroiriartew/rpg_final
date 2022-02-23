@@ -7,8 +7,8 @@ public class WriteDialogueData : MonoBehaviour
 {
     private void Awake()
     {
-        string json = JsonUtility.ToJson(new DialogueData());
+        string json = JsonUtility.ToJson(new PassiveAbility());
 
-        File.WriteAllText(Application.dataPath + "/JSON_Files/Dialogue-Ryan.json", json);
+        File.WriteAllText(Application.dataPath + "/JSON_Files/PassiveAbility.json", json);
     }
 }
