@@ -32,6 +32,7 @@ public class PlayerActor : MonoBehaviour
         _animator = GetComponent<Animator>();
 
         SetCharacter();
+
     }
 
     private void Start()
@@ -74,7 +75,9 @@ public class PlayerActor : MonoBehaviour
     /// </summary>
     public void SetCharacter()
     {
-        string json = File.ReadAllText(Application.dataPath + "/JSON_Files/characterFile.json");
+        TextAsset info = Resources.Load<TextAsset>("characterFile");
+
+        string json = info.text;
 
 
         CharacterData characterData = JsonUtility.FromJson<CharacterData>(json);

@@ -13,12 +13,18 @@ public class LevelHUD : MonoBehaviour
     private void Start()
     {
         PlayerSingleton.GetInstance().GetPlayer().levelUp += UpdateUI;
+        AbilityHUD.GetInstance().UpdateAbilityPoints += UpdateUIHUD;
     }
 
     public void UpdateUI(int p_level, int p_points )
     {
         _level.text = p_level.ToString();
         _abilityPoints.text = p_points.ToString();
+    }
+
+    public void UpdateUIHUD()
+    {
+        _abilityPoints.text = PlayerSingleton.GetInstance().GetPlayer().GetCharacter().GetLevelingSystem().GetAbilityPoints().ToString();
     }
 
 

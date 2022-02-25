@@ -19,7 +19,8 @@ public class FileLoaderDialogues
 
     public DialogueData LoadDialogueData(string p_path)
     {
-        string jsonLoadDialogueData = System.IO.File.ReadAllText(Application.dataPath + p_path);
+        TextAsset info = Resources.Load<TextAsset>(p_path);
+        string jsonLoadDialogueData = info.text;
         _dialogueData = JsonUtility.FromJson<DialogueData>(jsonLoadDialogueData);
 
         return _dialogueData;

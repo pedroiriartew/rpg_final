@@ -28,9 +28,9 @@ public class SlotScript : MonoBehaviour
 
         _icon.sprite = _item.GetIcon();
 
-        Color temp = _icon.color;
-        temp.a = 1f;
-        _icon.color = temp;
+        Color tmp = _icon.color;
+        tmp.a = 1f;
+        _icon.color = tmp;
 
         _name.text = _item.GetName();
 

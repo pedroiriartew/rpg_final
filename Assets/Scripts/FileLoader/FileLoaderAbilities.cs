@@ -19,9 +19,9 @@ public class FileLoaderAbilities
         return _instance;
     }
 
-    public AbilityData LoadAbilityData(string path)
+    public AbilityData LoadAbilityData(TextAsset info)
     {
-        string jsonLoadAbilityData = System.IO.File.ReadAllText(path);
+        string jsonLoadAbilityData = info.text;
         _abilities = JsonUtility.FromJson<AbilityData>(jsonLoadAbilityData);
 
         return _abilities;

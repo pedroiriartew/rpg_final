@@ -6,7 +6,7 @@ public class FileLoaderItems
 {
     private static FileLoaderItems _instance;
 
-    private string _path = Application.dataPath + "/JSON_Files/items.json";
+    private string _path = "items";
 
     private ItemCollection _itemsData = null;
 
@@ -22,7 +22,8 @@ public class FileLoaderItems
 
     public ItemCollection LoadItemsCollection()
     {
-        string jsonLoadItemData = System.IO.File.ReadAllText(_path);
+        TextAsset info = Resources.Load<TextAsset>(_path);
+        string jsonLoadItemData = info.text;
         _itemsData = JsonUtility.FromJson<ItemCollection>(jsonLoadItemData);
 
         return _itemsData;

@@ -78,7 +78,6 @@ public class QuestHUD : MonoBehaviour
             }
             else
             {
-                Debug.Log("Ya lo tengo");
                 _questSlots[i].gameObject.SetActive(_questUI.activeSelf);
             }
         }

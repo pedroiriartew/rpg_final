@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class AbilityHUD : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class AbilityHUD : MonoBehaviour
     [SerializeField] private Transform _passiveAbGrid;
     [SerializeField] private GameObject _abilitiesEquippedUI;
     [SerializeField] private GameObject _abilitiesShopUI;
+
+    public event Action UpdateAbilityPoints;
 
     #region Singleton
     private void Awake()
@@ -205,6 +208,7 @@ public class AbilityHUD : MonoBehaviour
                             _availableAbilitiesHUD[i].SetID(_purchasedAbility.GetID());
                             //newAvailableAbility.SetImage(_purchasedAbility.GetImage());
                             _availableAbilitiesHUD[i].SetText(_purchasedAbility.GetTextString());
+                            UpdateAbilityPoints?.Invoke();
                         }
                     }
                 }

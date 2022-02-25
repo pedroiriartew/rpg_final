@@ -41,10 +41,13 @@ public class EquipmentSlotScript : MonoBehaviour
 
     public void RemoveFromSlot()
     {
-        _character.SetLessStats(_equipableItem.GetStats());
-        _character.GetInventory().RemoveItemFromEquipment(_equipableItem);
+        if (_equipableItem != null)
+        {
+            _character.SetLessStats(_equipableItem.GetStats());
+            _character.GetInventory().RemoveItemFromEquipment(_equipableItem);
 
-        ClearSlot();
+            ClearSlot();
+        }
     }
 
 }

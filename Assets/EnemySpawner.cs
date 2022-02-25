@@ -8,6 +8,9 @@ public class EnemySpawner : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        EnemyFactory.GetInstance().RequestEnemy(Random.Range(1, 4), _spawnPoint.position);
+        if (other.CompareTag("Player"))
+        {
+            EnemyFactory.GetInstance().RequestEnemy(Random.Range(1, 3), _spawnPoint.position);
+        }
     }
 }

@@ -6,9 +6,12 @@ public class EnemyActor : MonoBehaviour
 {
     protected EnemyCharacter _character;
     protected PlayerActor _actor;
+    protected Animator _animator;
     private void Start()
     {
         _actor = PlayerSingleton.GetInstance().GetPlayer();
+        _animator = GetComponent<Animator>();
+        _animator.SetFloat("Run", 1f);
     }
 
     public void ReceiveDamage(float dmg)

@@ -16,7 +16,7 @@ public class Character_Selector : MonoBehaviour
 
         string json = JsonUtility.ToJson(_newCharacterData);
 
-        File.WriteAllText(Application.dataPath + "/JSON_Files/characterFile.json", json);
+        File.WriteAllText("characterFile", json);
 
         CharacterCreator.GetInstance().SetClass(_newCharacter);
 
@@ -30,7 +30,7 @@ public class Character_Selector : MonoBehaviour
 
         string json = JsonUtility.ToJson(_newCharacterData);
 
-        File.WriteAllText(Application.dataPath + "/JSON_Files/characterFile.json", json);
+        File.WriteAllText("characterFile", json);
 
         CharacterCreator.GetInstance().SetClass(_newCharacter);
 
@@ -44,7 +44,7 @@ public class Character_Selector : MonoBehaviour
 
         string json = JsonUtility.ToJson(_newCharacterData);
 
-        File.WriteAllText(Application.dataPath + "/JSON_Files/characterFile.json", json);
+        File.WriteAllText("characterFile", json);
 
         CharacterCreator.GetInstance().SetClass(_newCharacter);
 

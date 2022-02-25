@@ -36,16 +36,11 @@ public class EnemyFactory : MonoBehaviour
         {
             case 1:
                 goMesh = Instantiate(_enemyArray[0], Vector3.zero, Quaternion.identity);
-                goMesh.AddComponent<NormalEnemyActor>();
-                goMesh.GetComponent<NormalEnemyActor>().SetCharacter(new NormalEnemy());
-                break;
-            case 2:
-                goMesh = Instantiate(_enemyArray[1], Vector3.zero, Quaternion.identity);
                 goMesh.AddComponent<FastEnemyActor>();
                 goMesh.GetComponent<FastEnemyActor>().SetCharacter(new FastEnemy());
                 break;
-            case 3:
-                goMesh = Instantiate(_enemyArray[2], Vector3.zero, Quaternion.identity);
+            case 2:
+                goMesh = Instantiate(_enemyArray[1], Vector3.zero, Quaternion.identity);
                 goMesh.AddComponent<TankEnemyActor>();
                 goMesh.GetComponent<TankEnemyActor>().SetCharacter(new TankEnemy());
                 break;
@@ -66,16 +61,11 @@ public class EnemyFactory : MonoBehaviour
         {
             case 1:
                 goMesh = Instantiate(_enemyArray[0], p_position, Quaternion.identity);
-                goMesh.AddComponent<NormalEnemyActor>();
-                goMesh.GetComponent<NormalEnemyActor>().SetCharacter(new NormalEnemy());
-                break;
-            case 2:
-                goMesh = Instantiate(_enemyArray[1], p_position, Quaternion.identity);
                 goMesh.AddComponent<FastEnemyActor>();
                 goMesh.GetComponent<FastEnemyActor>().SetCharacter(new FastEnemy());
                 break;
-            case 3:
-                goMesh = Instantiate(_enemyArray[2], p_position, Quaternion.identity);
+            case 2:
+                goMesh = Instantiate(_enemyArray[1], p_position, Quaternion.identity);
                 goMesh.AddComponent<TankEnemyActor>();
                 goMesh.GetComponent<TankEnemyActor>().SetCharacter(new TankEnemy());
                 break;

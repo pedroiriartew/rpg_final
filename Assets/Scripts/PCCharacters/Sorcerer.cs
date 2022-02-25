@@ -13,7 +13,7 @@ public class Sorcerer : PlayableCharacter
         _myStats.SPEED = 5f;
         _myStats.RANGE = 15f;
         _myStats.EXPERIENCE = 0;
-        _myStats.EXPERIENCE_CAP = 100;
+        _myStats.EXPERIENCE_CAP = 10;
         _inventory = new InventorySystem();
         _className = "Sorcerer";
 

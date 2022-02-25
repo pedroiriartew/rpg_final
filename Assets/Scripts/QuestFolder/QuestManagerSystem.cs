@@ -28,7 +28,9 @@ public class QuestManagerSystem
 
     public void AddQuest(int p_IDquestToAdd)
     {
-        string json = System.IO.File.ReadAllText(Application.dataPath + "/JSON_Files/QuestDataList.json");
+        TextAsset info = Resources.Load<TextAsset>("QuestDataList");
+
+        string json = info.text;
         QuestData questListData = JsonUtility.FromJson<QuestData>(json);
 
         foreach (Quest item in questListData.QuestList)
@@ -89,7 +91,7 @@ public class QuestManagerSystem
                                         QuestHUD.GetInstance().RemoveCompletedQuest(questID);
 
                                         Debug.Log(questItem + " completed");
-
+                                        Debug.Log(questItem.GetExperience());
                                         PlayerSingleton.GetInstance().GetPlayer().CheckLevelUp(questItem.GetExperience()); ;
                                     }
                                 }

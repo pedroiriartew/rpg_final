@@ -27,15 +27,15 @@ public class AbilitySystem
         switch (_className)
         {
             case "Warrior":
-                _classAbilities = FileLoaderAbilities.GetInstance().LoadAbilityData(Application.dataPath + "/JSON_Files/WarriorAbilityList.json");
+                _classAbilities = FileLoaderAbilities.GetInstance().LoadAbilityData(Resources.Load<TextAsset>("WarriorAbilityList"));
                 break;
 
             case "Sorcerer":
-                _classAbilities = FileLoaderAbilities.GetInstance().LoadAbilityData(Application.dataPath + "/JSON_Files/SorcererAbilityList.json");
+                _classAbilities = FileLoaderAbilities.GetInstance().LoadAbilityData(Resources.Load<TextAsset>("SorcererAbilityList"));
                 break;
 
             case "Rogue":
-                _classAbilities = FileLoaderAbilities.GetInstance().LoadAbilityData(Application.dataPath + "/JSON_Files/RogueAbilityList.json");
+                _classAbilities = FileLoaderAbilities.GetInstance().LoadAbilityData(Resources.Load<TextAsset>("RogueAbilityList"));
                 break;
 
             default:

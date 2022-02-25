@@ -8,8 +8,8 @@ public class Script_ItemPrefab : MonoBehaviour
 
     public void Interact()
     {
-        gameObject.SetActive(false);
         PlayerSingleton.GetInstance().GetPlayer().GetCharacter().GetInventory().AddToInventory(_baseItem);
+        Destroy(gameObject);
     }
 
     public void Initialize(BaseItem item)
