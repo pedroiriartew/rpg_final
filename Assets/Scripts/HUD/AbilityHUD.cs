@@ -185,11 +185,12 @@ public class AbilityHUD : MonoBehaviour
         }
     }
 
-    public void AddToAvailableAbilityList(PurchasableAbilitySlot _purchasedAbility)
+    public bool AddToAvailableAbilityList(PurchasableAbilitySlot _purchasedAbility)
     {
         if (!PlayerSingleton.GetInstance().GetPlayer().GetCharacter().BuyAbility(_purchasedAbility.GetID()))//No puedo comprar la habilidad
         {
             Debug.Log("No se pudo comprar la habilidad--Quizás no tenga puntos suficientes");
+            return false;
         }
         else
         {
@@ -216,6 +217,7 @@ public class AbilityHUD : MonoBehaviour
             _purchasableAbilitiesHUD.Remove(_purchasedAbility);
 
             UpdateShopUI();
+            return true;
         }
     }
 
@@ -227,8 +229,9 @@ public class AbilityHUD : MonoBehaviour
         }
         else
         {
-            //Por ahora, nada.
-            //PlayerSingleton.GetInstance().GetPlayer().GetCharacter().AddAbilityFromAvailableList(_availableAbility.GetID());
+            PlayerSingleton.GetInstance().GetPlayer().GetCharacter().AddAbilityFromAvailableList(_availableAbility.GetID());
+            UpdateShopUI();
+            UpdateEquippedUI();
         }
     }
 

@@ -5,6 +5,7 @@ public class PurchasableAbilitySlot : ShopAbilitySlot
 {
     public void BuyAbilityFromListUI()
     {
-        AbilityHUD.GetInstance().AddToAvailableAbilityList(this);
+        if(AbilityHUD.GetInstance().AddToAvailableAbilityList(this))
+            Destroy(gameObject);
     }
 }
